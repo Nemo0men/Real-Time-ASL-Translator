@@ -1,12 +1,12 @@
 # AI_Hardware_Project_Template
 
 ## Team Name: 
-(Enter your team name from Canvas)
+##AI Brawlers
 
 ## Team Members:
-- Student 1
-- Student 2
-- Student 3
+## Bryan Tang 
+## Nemo Kim 
+## Davis Wang
 
 ## Project Title:
 (Enter your project title - be creative)
