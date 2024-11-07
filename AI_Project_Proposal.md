@@ -1,7 +1,7 @@
 ## AI_Hardware Project Proposal
 
 ## Team Name: 
-AI Brawlers
+AI Brawlersasdf
 
 ## Team Members:
 Bryan Tang, 
