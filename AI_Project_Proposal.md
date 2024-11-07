@@ -26,4 +26,7 @@ Ardunio TinyML Kit, Ardunio Nano 33 BLE; Camera; Tensorflow #2
 AI-driven device that translates sign language gestures with high throughput and accuracy in real time. This device, powered by an Arduino TinyML kit, will allow users to perform basic sign language gestures that are then converted into text output, bridging communication between sign language users and those unfamiliar with it. This technology aims to enhance accessibility, enabling smoother, more inclusive interactions in daily life.
 
 ## Timeline:
-***Have not figured out yet***
+Week 1: Research
+Week 2: Software Development 
+Week 3: Hardware Implementation
+Week 4: Testing
