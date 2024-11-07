@@ -27,6 +27,9 @@ AI-driven device that translates sign language gestures with high throughput and
 
 ## Timeline:
 Week 1: Research
+
 Week 2: Software Development 
+
 Week 3: Hardware Implementation
+
 Week 4: Testing
