@@ -1,14 +1,14 @@
-AI_Hardware Project Proposal
+##AI_Hardware Project Proposal
 
-Team Name: 
+##Team Name: 
 AI Brawlers
 
-Team Members:
+##Team Members:
 Bryan Tang, 
 Nemo Kim,
 Davis Wang
 
-Project Title:
+##Project Title:
 SignScribe: An AI powered real time sign language translator platform
 
 Project Description:
@@ -19,7 +19,8 @@ Develop a Real-Time Gesture Recognition Model: Train and deploy a deep learning 
 
 Achieve High Accuracy and Responsiveness: Optimize the model to ensure reliable classification of various hand gestures with minimal delay, aiming for high throughput and low latency.
 
-Technology Stack: Arduino Tiny ML Kit
+##Technology Stack: 
+Ardunio TinyML Kit, Ardunio Nano 33 BLE; Camera; Tensorflow #2
 
 ## Expected Outcomes:
 AI-driven device that translates sign language gestures with high throughput and accuracy in real time. This device, powered by an Arduino TinyML kit, will allow users to perform basic sign language gestures that are then converted into text output, bridging communication between sign language users and those unfamiliar with it. This technology aims to enhance accessibility, enabling smoother, more inclusive interactions in daily life.
