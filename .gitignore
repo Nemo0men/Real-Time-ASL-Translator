@@ -1,2 +1,5 @@
 # Ignore virtual environment
 venv/
+
+#ignore labelImg Software
+/ImageCollection/TensorFlow/labelImg/

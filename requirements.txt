@@ -1,0 +1,6 @@
+tensorflow>=2.0.0
+Pillow>=8.0.0
+pandas>=1.0.0
+lxml>=4.5.0
+tensorflow-object-detection-api>=0.1.1
+argparse>=1.4.0
