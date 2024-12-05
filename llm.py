@@ -1,6 +1,4 @@
 import argparse
-import sys
-print(sys.path)
 from groqcloud import GroqLLM
 import os
 
