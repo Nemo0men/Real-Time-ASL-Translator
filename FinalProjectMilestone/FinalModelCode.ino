@@ -12,9 +12,9 @@
  * License: Apache-2.0
  */
 
-#include <bryanTang-project-1_inferencing.h>
+#include <SignScribeV2_inferencing.h>
 #include <Arduino_OV767X.h>
-#include <>  // Used to convert data to Base64 encoding
+#include "base64.h"  // Used to convert data to Base64 encoding
 
 // Preprocessor settings
 #define BAUD_RATE   230400  // Must match receiver application
@@ -32,10 +32,10 @@
 // Add the #define preprocessor statements to define the pins for the RGB LED
 
 // Other settings
-static const int scale_width = 40;
-static const int scale_height = 30;
-static const int crop_width = 30;
-static const int crop_height = 30;
+static const int scale_width = 100;
+static const int scale_height = 75;
+static const int crop_width = 75;
+static const int crop_height = 75;
 static const int rgb888_bytes_per_pixel = 3;
 static const int grayscale_bytes_per_pixel = 1;
 
