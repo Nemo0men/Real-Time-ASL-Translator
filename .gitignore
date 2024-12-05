@@ -1,5 +1,9 @@
 # Ignore virtual environment
 venv/
+myenv/
 
 #ignore labelImg Software
 /ImageCollection/TensorFlow/labelImg/
+
+# api key
+.env
