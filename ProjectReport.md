@@ -17,7 +17,7 @@ Ardunio TinyML Kit, Ardunio Nano 33 BLE; OV7675 Camera; Micro USB cable
 ## Software:
 Ardunio IDE; Python Compiler (VS code), Edge Impulse, Google Collab
 
-#Step 1: Image Capture (Set up Arduino IDE and GUI + collecting images for dataset) 
+##Step 1: Image Capture (Set up Arduino IDE and GUI + collecting images for dataset) 
 1. Download the Ardunio IDE and install following Ardunio packages by:
    - Open the Arduino IDE. Go to Tools > Board > Boards Manager.... Search for "nano 33" in the boards manager pane. Install the Arduino Mbed OS Nano Boards board package.
    - Open the Arduino IDE. Go to Tools > Manage Libraries > .... Search for "OV7675". Install the Arduino_OV767X library.
@@ -28,7 +28,7 @@ Ardunio IDE; Python Compiler (VS code), Edge Impulse, Google Collab
 6. Pick out specific ASL handsigns and take about 50-60 pictures of each one at different angles (make sure to label them with what each one is). Take another 50-60 images of a background
 7. Once all the images are saved and move them to a single folder and zip that folder to a compressed ZIP folder.
 
-#Step 2: Image Translations (Take images and upload them to Edge Impulse)
+##Step 2: Image Translations (Take images and upload them to Edge Impulse)
 1. Open up Google Collab Notebook: https://colab.research.google.com/github/edgeimpulse/workshop-arduino-tinyml-roshambo/blob/main/02-data-augmentation/ei-image-augmentation.ipynb
 2. Upload ZIP file with images into google collab notebook > right click > Upload > ZIP Folder
 3. Make an Edge Impulse Account and navigate to create first project
