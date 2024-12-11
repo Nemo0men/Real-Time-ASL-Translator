@@ -19,6 +19,15 @@ Ardunio TinyML Kit, Ardunio Nano 33 BLE; OV7675 Camera; Micro USB cable
 ## Software:
 Ardunio IDE; Python Compiler (VS code), Edge Impulse, Google Collab
 
+## Objectives, Expected Results, Known Issues, Fixes
+We aimed to stablish an accurate live-capture detection system that would allow us to analyze ASL hand gestures contained within our database as they were being signed. Taking these gestures, we would track ongoing sequences of gestures and translate them into written sentences using a text generation pipeline. These texts could then be reformatted in an audio format to communicate an equivalent meaning to a corresponding user.
+
+The expected results are to have a high accuracy in recognizing official ASL sign gestures based off the input images from snapshots of live camera feed. These images are then expected to be translated into a coherent and highly relevant sentence with full grammatical structure and syntax. 
+
+Several known issues are directly connected to the limitations of the hardware, where the camera equipped within the Arduino Kit is only effective to a certain range. The software coupled with this camera also is limited by the camera's framerate and resolution in different environments. Edge Impulse also has some compatability issues related to the size of the dataset used for training, where a limited amount of images to form classifications with can result in significant loss through training error. 
+
+The fixes to these issues were not entirely effective. Some adjustments were made to the software behind the camera, such as adjustments made to saturation to help the model differentiate between different hand gestures. Changes were also made to the resolution, reaching the local memory limit of our hardware and causing the compile time for each runtime to increase dramatically. The metrics for accuracy on Edge Impulse showed very promising results, but in reality our dataset did not have the depth to capture predictions for all of the gestures - only high probabilities for some gestures, rather than a few ambiguous gestures that could easily be confused with other hand signs.
+
 ## Step 1: Image Capture (Set up Arduino IDE and GUI + collecting images for dataset) 
 1. Download the Ardunio IDE and install following Ardunio packages by:
    - Open the Arduino IDE. Go to Tools > Board > Boards Manager.... Search for "nano 33" in the boards manager pane. Install the Arduino Mbed OS Nano Boards board package.
