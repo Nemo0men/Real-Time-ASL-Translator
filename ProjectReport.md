@@ -67,6 +67,66 @@ The fixes to these issues were not entirely effective. Some adjustments were mad
 5. Once uploaded you can open up the CamGUI.py file from the image capture step > Paste in the port of your Arduino board and click Connect.
 6. The terminal in the python IDE should display the inference results for the live video in frame.
 
+## Step 5: Text Translation and Sentence Formation Using LLM
+This step involves integrating a Language Model (LLM) for translating recognized ASL gestures into coherent sentences. The LLM will process gesture sequences and construct meaningful, grammatically correct sentences based on the input gesture classifications.
+
+Prerequisites
+Ensure the recognized ASL gestures (e.g., ['hello', 'my', 'name', 'is']) are returned as text predictions in sequential order from the inference pipeline.
+Install required Python packages: pip install openai or any library for the LLM service you're using.
+
+Implementation Steps
+Prepare Gesture Sequence Input:
+
+Collect gesture classification results from the Arduino's inference results (from Step 4). These should be in the form of a list of recognized words or gestures.
+Integrate an LLM for Sentence Generation:
+
+Use an LLM API like OpenAI's GPT or any other cloud-based LLM service to process the gesture sequence into a coherent sentence.
+Define the Prompt:
+
+Create a structured prompt template that provides context for the LLM to understand how to structure the gestures into a sentence.
+
+## Code Integration Example
+
+```python
+import openai
+
+# Configure OpenAI API key (or replace with your chosen LLM API)
+openai.api_key = "your_openai_api_key"
+
+PROMPT_TEMPLATE = """
+Translate the following sequence of words into a grammatically correct sentence:
+
+Words: {words}
+
+Sentence:
+"""
+
+def generate_sentence(gesture_sequence):
+    """
+    Takes a list of recognized gestures and generates a sentence using an LLM.
+    """
+    # Format the prompt with the input gestures
+    prompt = PROMPT_TEMPLATE.format(words=" ".join(gesture_sequence))
+
+    # Send the prompt to the LLM API and get the response
+    response = openai.Completion.create(
+        engine="text-davinci-003",  # Replace with your engine
+        prompt=prompt,
+        max_tokens=50,
+        temperature=0.7
+    )
+    
+    # Extract the generated sentence
+    generated_sentence = response.choices[0].text.strip()
+    return generated_sentence
+
+# Example usage
+gesture_sequence = ['hello', 'my', 'name', 'is', 'john']
+sentence = generate_sentence(gesture_sequence)
+print("Generated Sentence:", sentence)
+
+
+
 
 
 
